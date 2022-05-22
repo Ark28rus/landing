@@ -694,11 +694,106 @@ a:hover {
     display: flex;
     
   }
+
+  .fifth-section {
+    margin-top: -112.53px;
+    height: 864px;
+    position: relative;
+    background-image: url("../images/slide5/slide5_background.jpg");
+    background-size: cover;
+    z-index: 0;
+}
+
+.fifth-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+}
+
+.fifth-section-content {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.fifth-section aside {
+    width: 488px;
+    height: 100%;
+}
+
+.fifth-section aside p {
+    padding-top: 137px;
+    padding-bottom: 47px;
+    font-size: 27px;
+    line-height: 37.5px;
+}
+
+.fifth-section-navigation {
+    margin-left: -38px;
+}
+
+.fifth-section-navigation li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.fifth-section-navigation a:link,
+.fifth-section-navigation a:visited {
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    line-height: 38px;
+    text-decoration: none;
+}
+
+.fifth-section-navigation a:hover {
+    color: #E3B873;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.gallery {
+    top: -41.16px;
+    position: relative;
+    height: 946.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.gallery-2 {
+    top: -112.53px;
+    height: 936.88px;
+    margin-left: 43px;
+}
+
+.fifth-section-mobile {
+    display: none;
+}
   
   .slide5 {
     position: relative;
     background-image: url('../images/slide5/slide5_background.jpg');
     height: 864px;
+  }
+
+  .slide5::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
   }
   
   .slide5-overlay {
@@ -720,6 +815,7 @@ a:hover {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    color: #E3B873;
   }
   
   .deco-styles-s5 {
